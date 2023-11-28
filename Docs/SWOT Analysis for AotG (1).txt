@@ -1,0 +1,42 @@
+﻿SWOT Analysis 
+In each of the below categories, list out the strengths, weaknesses, opportunities and threats you see for your application:  
+(Example of a threat would be competition from similar applications BUT your strength would be how your application is different or better than the competition.)  
+
+
+LIST A MINIMUM OF 3 ITEMS IN EACH CATEGORY
+ (This is based on research you have completed for your application.) 
+
+
+S
+Strengths 
+* Nothing like this exists on the market currently as an all-in-one package
+* Streamlines workflow for Travel Advisors
+* Makes it easier for clients to have access to excursions
+* Allows clients and travel advisors to work together at anytime
+* Clients will click on one link vs. searching through several links to find what they want
+
+
+	W
+Weakness
+* There are a lot of excursions/activities across the world (takes time to compile), lots of cruise ships and destinations
+* There are a lot of travel agencies that could use this as well and that would take time compiling the information just for them
+* All the content exists already and people are used to getting it from the various websites
+* It uses data from other websites so if one goes down, it could possibly affect ours
+
+
+
+
+	O
+Opportunities 
+* To simplify processes between travel advisors and clients
+* To build a bridge between suppliers and travel advisors to allow for both to profit more 
+* To have all available excursions/tours/activities in one place
+* To bring something unique to the travel advisor/client relationship
+
+
+	T
+Threats 
+* Tour operators not keeping inventory up to date
+* Tour operators removing “affiliate” access to advisors
+* Similar threats that all websites face: hacking, code degeneration, etc…
+* The ever changing areas (businesses moving, buildings being torn down or built, ships being sold/scrapped, etc)

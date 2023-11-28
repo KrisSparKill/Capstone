@@ -1,0 +1,12 @@
+/*CSS Stylesheet */
+body {
+  font-family:"Playfair Display";
+  background-color: #9fc4bc;
+}
+
+h1 {
+  color: #000000;
+  text-align: center;
+  font-size: 32px;
+}
+
