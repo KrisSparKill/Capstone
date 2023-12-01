@@ -1,0 +1,78 @@
+Write a Definition Statement
+* I want to build an application that allows people who are traveling to have access to the various excursions/activities available in their destination, access to a scavenger hunt (created by the travel advisor or myself), access to city guides, and restaurant/food recommendations all in one location vs. having to refer back to an email (or several emails) with various links.
+
+Define your Audience
+* Who is using my application?
+    o Anyone who is traveling
+    o Travel Agencies/Travel Advisors
+
+Outline the content of the application
+* What do I want on each page? (text / pics / images / navigation)
+    o There will be text, images, and navigation on each page. Some pages will have more images and others will have more text and drop down menus. Each page will have navigation � on mobile it will be a hamburger menu and on desktop it will be a more traditional menu
+
+* What do I want the functionality of each page to be?
+    o For the welcome page � to select the travel agency they have a relationship with and if they do not have one, then it defaults to the standard brand
+    o Page 2 � Will change to agency branding if they selected an agency, if not, it remains in the Adventures on the Go branding. On this page they will have a drop down menu to select a destination or cruise ship (the ship category will eventually lead to another drop down where they select their sailing, for now, we are using a generic itinerary
+    o Page 3 is where the fun begins. It will display the itinerary along with a suggestion of what to do, boredom busters for waiting in line (trivia, fun facts), that then goes into a day by day break down (with quick links to each day and back to top). Inside each day will be info about the city they are going to, food/restaurant recommendations, things to do/see/experience, excursions and activities available, and a little scavenger hunt to get to know the area, or explore the port
+
+* What is the purpose of my application?
+    o To streamline available activities offered by different outlets into one place and provide an extra level of service for travelers.
+
+* What business problem or real world problem am I going to be solving?
+    o For travel advisors, instead of them emailing several links, itineraries, and various other items, everything could be sent in one link and it would allow clients to browse through the activities available from different tour operators, start to get a feel for what to expect, and maybe even have some spontaneous fun
+
+Define the attributes of your website
+* Color Palette:
+    o Primary - #9fc4bc, #dd7326, #432303
+    o Accents - #eda539, #f5ffee
+
+* Images � AotG Logo, images of people
+
+* Fonts �
+    o ITC Motter Corpus Conde,
+    o Playfair Display
+
+* Logos � a Badge Style logo currently with the image of Mountains on it�but will eventually have mountains, plains, ocean, an airplane, and a cruise ship
+
+* Navigation � Hamburger and traditional horizontal menu
+
+Create and provide link to User Story Map in Mural
+* https://app.mural.co/t/bootcamp1304/m/bootcamp1304/1699581557133/84b7fdad159d298c977fcc8596b45b159ea9deb9?sender=u18b8d49f46572b44e57a5873
+
+Research the following:
+* List Applications Researched: (links to websites / applications)\
+    o https://www.arrivalguides.com/en
+    o https://www.viator.com/
+    o https://www.projectexpedition.com/
+    o https://www.scavengerhunt.com/
+    o https://ventureashore.com/
+
+* List what you like about each site:
+    o The user flow on them
+    o The ease of the search options
+    o The user interfaces
+    o Easy checkout for the sites that have the checkout option
+
+* List what you do not like about each site:
+    o Some are not optimized to be viewed on mobile devices or smaller screens
+
+* How my application will be different:
+  o My application will be different in that there isn�t an all-in-one place for everything yet and that is what this one intends to do. Make it a one stop shop.
+
+Create wireframes and provide link for each page (minimum of 4-5 pages) including Home, About Me, Contact Us and 1-2 other pages demonstrating the specific functionality of your capstone's purpose
+    Docs\Wireframes\Page 1 - Home.jpg
+    Docs\Wireframes\Page 2 - Welcome Default.jpg
+    Docs\Wireframes\Page 3 - Activities Overview Default.jpg
+    Docs\Wireframes\Page 4 - Daily Activities.jpg
+    Docs\Wireframes\Page 5 - About Default.jpg
+    Docs\Wireframes\Page 6 - Contact Default.jpg
+
+
+Create and provide link to User Flow Diagram
+    Docs\Images\Flow Diagram.jpg
+
+Create and provide link to SWOT Analysis
+    Docs\SWOT Analysis for AotG (1).txt
+* https://docs.google.com/document/d/1oeJ8fa8eFp_SQiEbN8dAOpGmY9ww8W29LJ6B3cMlMCc/edit?usp=sharing
+
+
