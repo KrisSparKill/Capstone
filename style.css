@@ -27,6 +27,11 @@ h1 {
   font-size: 32px;
 }
 
+h2 {
+  color: var(--secondary-color);
+  text-align: center;
+}
+
 p {
   color: var(--text-primary-color);
   text-align: center;
@@ -83,7 +88,6 @@ p {
   }
 }
 
-
 .center {
   display: block;
   margin-left: auto;
@@ -134,7 +138,7 @@ p {
 }
 
 footer {
-  display: relative;
+  display: block;
   text-align: center;
   font-family:"Playfair Display";
   color: var(--secondary-color);
