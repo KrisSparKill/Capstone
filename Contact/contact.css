@@ -1,0 +1,80 @@
+/*CSS Stylesheet */
+:root {
+  --primary-color:#9fc4bc;
+  --secondary-color: #432303;
+  --tertiary-color: #eda539;
+  --text-primary-color: #f5ffee;
+  --text-secondary-color: #dd7326;
+}
+
+body {
+  font-family:"Playfair Display";
+background-color: var(--primary-color)
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (min-width: 550px) {
+  nav > .fa-bars {
+    display: none;
+  }
+}
+
+@media (max-width: 549px) {
+  .hidden--mobile {
+    display: none;
+  }
+
+  nav > .fas.fa-bars {
+    display: block;
+    cursor: pointer;
+    color: var(--secondary-color);
+  }
+
+  ul.nav-links {
+    display: none;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--primary-color);
+  }
+
+  ul.nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  ul.nav-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+
+  .dropdown:hover .nav-links {
+    display: block;
+  }
+}
+
+h1 {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 32px;
+}
+
+div {
+  display: block;
+  text-align: center;
+}
+form {
+  display: inline-block;
+  margin:auto;
+  text-align: center;
+}
