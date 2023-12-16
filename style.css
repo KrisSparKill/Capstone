@@ -7,9 +7,19 @@
   --text-secondary-color: #dd7326;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Playfair Display", serif;
+}
+
 body {
-  font-family:"Playfair Display";
-background-color: var(--primary-color)
+  background-color: var(--primary-color);
+  align-items: center;
 }
 
 header {
@@ -21,6 +31,7 @@ nav {
   top: 0;
   right: 0;
 }
+
 h1 {
   color: var(--secondary-color);
   text-align: center;
@@ -42,10 +53,19 @@ p {
   grid-template-rows: 1fr 1fr;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 250px;
+  max-height: 250px;
+}
+
 .orangeBkgrnd {
   background-color: var(--tertiary-color);
 }
 
+/*Navagation and Hamburger menu*/
 @media (min-width: 550px) {
   nav > .fa-bars {
     display: none;
@@ -66,7 +86,7 @@ p {
   ul.nav-links {
     display: none;
     list-style: none;
-    padding: 0;
+    padding: 0px;
     position: absolute;
     top: 60px;
     right: 0;
@@ -88,14 +108,7 @@ p {
   }
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
+/* Dropdown Button - Select Your Travel Agency*/
 .dropbtn {
   background-color: var(--text-primary-color);
   color: var(--secondary-color);
@@ -112,9 +125,9 @@ p {
 }
 
 .dropdown-content {
+  text-align: center;
   display: none;
   position: relative;
-  text-align: center;
   background-color: var(--text-primary-color);
   box-shadow: 0px 8px 8px 0px var(--secondary-color);
   z-index: 1;
@@ -136,7 +149,85 @@ p {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/*Activities Page*/
+.activities {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  padding: 2px;
+}
 
+.homeport {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--secondary-color);
+  padding: 2px;
+  margin:2px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.ship-facts {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--secondary-color);
+  padding: 2px;
+  margin:2px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.itinerary {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--secondary-color);
+  padding: 2px;
+  margin:2px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.fun {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--secondary-color);
+  padding: 2px;
+  margin:2px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.excursions {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--secondary-color);
+  padding: 2px;
+  margin:2px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+/*.charleston {
+  display: block;
+  margin-left: 5%;
+  margin-right:90%;
+}*/
+
+/*Footer*/
 footer {
   display: block;
   text-align: center;
