@@ -16,7 +16,7 @@ export default () => html`
           <span class="material-symbols-outlined">expand_more </span>
         </button>
         <div class="dropdown-content">
-          <a href="/Destination/destination.html">I Don't Have One</a>
+          <a href="/Destination.js">I Don't Have One</a>
           <a href="#">Hidden Adventures Travel Co</a>
           <a href="#">Pursue Your Dreams Travel</a>
         </div>

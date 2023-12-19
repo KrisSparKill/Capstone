@@ -149,6 +149,7 @@ p {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 /*Activities Page*/
 .activities {
   display: grid;
@@ -164,6 +165,7 @@ p {
   grid-row-end: 2;
   background-color: var(--text-primary-color);
   border: 1px solid var(--secondary-color);
+  border-radius: 10px;
   padding: 2px;
   margin:2px;
   color: var(--secondary-color);
@@ -177,6 +179,7 @@ p {
   grid-row-end: 2;
   background-color: var(--text-primary-color);
   border: 1px solid var(--secondary-color);
+  border-radius: 10px;
   padding: 2px;
   margin:2px;
   color: var(--secondary-color);
@@ -190,6 +193,7 @@ p {
   grid-row-end: 3;
   background-color: var(--text-primary-color);
   border: 1px solid var(--secondary-color);
+  border-radius: 10px;
   padding: 2px;
   margin:2px;
   color: var(--secondary-color);
@@ -203,6 +207,7 @@ p {
   grid-row-end: 3;
   background-color: var(--text-primary-color);
   border: 1px solid var(--secondary-color);
+  border-radius: 10px;
   padding: 2px;
   margin:2px;
   color: var(--secondary-color);
@@ -216,16 +221,12 @@ p {
   grid-row-end: 4;
   background-color: var(--text-primary-color);
   border: 1px solid var(--secondary-color);
+  border-radius: 10px;
   padding: 2px;
   margin:2px;
   color: var(--secondary-color);
   text-align: center;
 }
-/*.charleston {
-  display: block;
-  margin-left: 5%;
-  margin-right:90%;
-}*/
 
 /*Footer*/
 footer {

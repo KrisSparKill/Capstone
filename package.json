@@ -2,10 +2,11 @@
   "name": "savvy-starter",
   "version": "1.0.0",
   "description": "",
-  "type":"module",
-  "scripts": {   "parcel-build": "parcel build index.html && cp _redirects ./dist/",
-  "serve": "parcel index.html"
-},
+  "type": "module",
+  "scripts": {
+    "parcel-build": "parcel build index.html && cp _redirects ./dist/",
+    "serve": "parcel index.html"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

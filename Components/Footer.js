@@ -1,11 +1,10 @@
 import html from "html-literal";
-
 export default () => html`
   <footer class="orangeBkgrnd">
     <br />
     <br />
-    <a href="About/index.html">About</a> |
-    <a href="Contact/index.html">Contact</a>
+    <a href="/About" data-navigo>About</a> |
+    <a href="/Contact" data-navigo>Contact</a>
     <br />
     <br />
     &copy; Adventures on the Go<br />
