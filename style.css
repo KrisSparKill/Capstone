@@ -61,6 +61,11 @@ p {
   max-height: 250px;
 }
 
+.trees {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 .orangeBkgrnd {
   background-color: var(--tertiary-color);
 }

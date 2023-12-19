@@ -1,4 +1,4 @@
-import { Header, Main, Footer } from "./Components";
+import { Header, Main, Footer } from "./components";
 import * as store from "./store";
 
 import Navigo from "navigo";

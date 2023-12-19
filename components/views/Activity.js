@@ -4,7 +4,7 @@ import mtnTrees from "../../assets/img/MountainsTrees.png";
 export default () => html`
   <main>
     <div class="flexContainer">
-      <img src=${mtnTrees} class="center" />
+      <img src=${mtnTrees} class="trees" />
       <div class="orangeBkgrnd">
         <div class="activities">
           <div class="homeport">
