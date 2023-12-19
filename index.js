@@ -1,9 +1,7 @@
 import { Header, Main, Footer } from "./Components";
-
 import * as store from "./store";
 
 import Navigo from "navigo";
-
 import { capitalize } from "lodash";
 
 const router = new Navigo("/");
@@ -33,6 +31,6 @@ router
   })
   .resolve();
 
-document.querySelector(".fa-bars").addEventListener("click", () => {
-  document.querySelector("nav > ul").classList.toggle("hidden--mobile");
-});
+// document.querySelector(".fa-bars").addEventListener("click", () => {
+//   document.querySelector("nav > ul").classList.toggle("hidden--mobile");
+// });
