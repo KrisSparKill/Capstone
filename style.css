@@ -61,12 +61,19 @@ p {
   max-height: 250px;
 }
 
+.trees {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 500px;
+}
+
 .orangeBkgrnd {
   background-color: var(--tertiary-color);
 }
 
 /*Navagation and Hamburger menu*/
-@media (min-width: 550px) {
+/* @media (min-width: 550px) {
   nav > .fa-bars {
     display: none;
   }
@@ -106,7 +113,7 @@ p {
   .dropdown:hover .nav-links {
     display: block;
   }
-}
+} */
 
 /* Dropdown Button - Select Your Travel Agency*/
 .dropbtn {

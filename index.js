@@ -1,4 +1,4 @@
-import { Header, Main, Footer } from "./Components";
+import { Header, Main, Footer } from "./components";
 import * as store from "./store";
 
 import Navigo from "navigo";
@@ -30,7 +30,3 @@ router
     }
   })
   .resolve();
-
-// document.querySelector(".fa-bars").addEventListener("click", () => {
-//   document.querySelector("nav > ul").classList.toggle("hidden--mobile");
-// });

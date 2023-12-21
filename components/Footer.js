@@ -3,8 +3,8 @@ export default () => html`
   <footer class="orangeBkgrnd">
     <br />
     <br />
-    <a href="/About" data-navigo>About</a> |
-    <a href="/Contact" data-navigo>Contact</a>
+    <a href="/Home">Home</a> | <a href="/About">About</a> |
+    <a href="/Contact">Contact</a>
     <br />
     <br />
     &copy; Adventures on the Go<br />
