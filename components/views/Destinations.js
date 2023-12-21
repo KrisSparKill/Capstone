@@ -12,7 +12,7 @@ export default () => html`
           <span class="material-symbols-outlined">expand_more </span>
         </button>
         <div class="dropdown-content">
-          <a href="/Activity.js">Carnival Sunshine 10/21/2024</a>
+          <a href="/Activity">Carnival Sunshine 10/21/2024</a>
         </div>
       </div>
     </div>
