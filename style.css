@@ -38,7 +38,7 @@ h1 {
   font-size: 32px;
 }
 
-h2 {
+h2, h3 {
   color: var(--secondary-color);
   text-align: center;
 }
@@ -50,7 +50,7 @@ p {
 
 .flexContainer {
   display:grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 .center {
@@ -71,49 +71,6 @@ p {
 .orangeBkgrnd {
   background-color: var(--tertiary-color);
 }
-
-/*Navagation and Hamburger menu*/
-/* @media (min-width: 550px) {
-  nav > .fa-bars {
-    display: none;
-  }
-}
-
-@media (max-width: 549px) {
-  .hidden--mobile {
-    display: none;
-  }
-
-  nav > .fas.fa-bars {
-    display: block;
-    cursor: pointer;
-    color: var(--secondary-color);
-  }
-
-  ul.nav-links {
-    display: none;
-    list-style: none;
-    padding: 0px;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: var(--primary-color);
-  }
-
-  ul.nav-links li {
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  ul.nav-links a {
-    color: var(--secondary-color);
-    text-decoration: none;
-  }
-
-  .dropdown:hover .nav-links {
-    display: block;
-  }
-} */
 
 /* Dropdown Button - Select Your Travel Agency*/
 .dropbtn {
@@ -149,7 +106,7 @@ p {
 }
 
 .dropdown-content a:hover {
-  background-color: var(--tertiary-color);
+  background-color: var(--text-secondary-color);
   color: var(--text-primary-color);
 }
 
@@ -161,15 +118,26 @@ p {
 .activities {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr 1fr;
-  padding: 2px;
+  grid-template-rows:1fr 1fr 1fr 1fr;
+  padding: 4px;
 }
 
+.itinerary {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  color: var(--secondary-color);
+  text-align: center;
+}
 .homeport {
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
   background-color: var(--text-primary-color);
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
@@ -182,20 +150,6 @@ p {
 .ship-facts {
   grid-column-start: 3;
   grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  background-color: var(--text-primary-color);
-  border: 1px solid var(--secondary-color);
-  border-radius: 10px;
-  padding: 2px;
-  margin:2px;
-  color: var(--secondary-color);
-  text-align: center;
-}
-
-.itinerary {
-  grid-column-start: 1;
-  grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
   background-color: var(--text-primary-color);
@@ -208,10 +162,10 @@ p {
 }
 
 .fun {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
   background-color: var(--text-primary-color);
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
@@ -222,8 +176,8 @@ p {
 }
 
 .excursions {
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 4;
   background-color: var(--text-primary-color);
@@ -233,6 +187,93 @@ p {
   margin:2px;
   color: var(--secondary-color);
   text-align: center;
+}
+
+.weather {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 2px;
+  margin:2px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.packing {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 2px;
+  margin:2px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.popup {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--text-primary-color);
+  display: none;
+}
+.popup-content {
+  background-color: var(--text-primary-color);
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid var(--secondary-color);
+  width: 30%;
+  font-weight: bolder;
+}
+.popup-content button {
+  display: block;
+  margin: 0 auto;
+}
+.show {
+  display: block;
+}
+h3 {
+  color: var(--secondary-color);
+}
+
+/*Form*/
+.form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 250px;
+  max-height: 250px;
+  color: var(--secondary-color);
+}
+
+.message {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formSub {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 250px;
+  max-height: 250px;
+  background-color: var(--text-primary-color);
+  color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 5px;
+
 }
 
 /*Footer*/

@@ -3,7 +3,7 @@ import logo from "../../assets/img/AotGLogo.png";
 import mtnTrees from "../../assets/img/MountainsTrees.png";
 
 export default () => html`
-  <img src=${logo} class="center" />
+  <!--img src=${logo} class="center" /-->
   <div class="flexContainer">
     <h1>Welcome to Adventures on the Go</h1>
     <p>Please select an option below to get started</p>
