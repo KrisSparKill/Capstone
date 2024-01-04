@@ -28,12 +28,13 @@ body {
 }
 
 .pyd.primaryBkgrnd {
-  background-color: white;
+  background-color: #f3f2ee;
 }
 
 .pyd.secondaryBkgrnd {
-  background-color: pink;
+  background-color: #5bc4c3;
 }
+
 
 .hatco.primaryBkgrnd {
   background-color: black;
