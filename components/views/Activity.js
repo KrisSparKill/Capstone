@@ -3,12 +3,13 @@ import mtnTrees from "../../assets/img/MountainsTrees.png";
 import itin from "../../assets/img/Itinerary.png";
 import charles from "../../assets/img/Charleston.png";
 import sun from "../../assets/img/Sunshine.jpg";
+import * as store from "../../store";
 
 export default state => html`
   <main>
     <div class="flexContainer">
       <img src=${mtnTrees} class="trees" />
-      <div class="orangeBkgrnd">
+      <div class="${store.Global.selectedBrand} secondaryBkgrnd">
         <div class="activities">
           <div class="itinerary">
             <br /><strong>Your Itinerary</strong><br />
@@ -23,10 +24,10 @@ export default state => html`
             <img src=${sun} class="center" />
           </div>
           <div class="fun"><br /><strong>Fun Activities</strong><br /></div>
-          <div class="excursions">
-            <br /><strong>Shore Excursions</strong><br />
+          <div class="excursions"><br /><strong>Port Stops</strong><br /></div>
+          <div class="packing">
+            <br /><strong>Packing Lists and Other Info</strong><br />
           </div>
-          <div class="packing"><br /><strong>Packing List</strong><br /></div>
           <div class="weather">
             <strong>
               <br />

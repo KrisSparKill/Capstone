@@ -17,9 +17,38 @@ html {
   font-family: "Playfair Display", serif;
 }
 
-body {
+.main {
   background-color: var(--primary-color);
   align-items: center;
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+}
+
+.pyd.primaryBkgrnd {
+  background-color: white;
+}
+
+.pyd.secondaryBkgrnd {
+  background-color: pink;
+}
+
+.hatco.primaryBkgrnd {
+  background-color: black;
+}
+
+.hatco.secondaryBkgrnd {
+  background-color: #29abe2;
+}
+
+.aotg.primaryBkgrnd {
+  background-color: var(--primary-color);
+}
+
+.aotg.secondaryBkgrnd {
+  background-color: var(--tertiary-color);
 }
 
 header {
@@ -68,7 +97,7 @@ p {
   max-width: 500px;
 }
 
-.orangeBkgrnd {
+.secondaryBkgrnd {
   background-color: var(--tertiary-color);
 }
 

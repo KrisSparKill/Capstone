@@ -8,17 +8,29 @@ import axios from "axios";
 const router = new Navigo("/");
 
 function render(state = store.Home) {
+  const brand = store.Global.nonThemedViews.includes(state.view)
+    ? "aotg"
+    : store.Global.selectedBrand;
   document.querySelector("#root").innerHTML = `
-  ${Header(state)}n
+  <div class="${brand} primaryBkgrnd">
+  ${Header(state)}
   ${Main(state)}
-  ${Footer()}
+  ${Footer(state)}
+  </div>
   `;
 
   router.updatePageLinks();
-  afterRender();
+  afterRender(state);
 }
 
-function afterRender() {
+function afterRender(state) {
+  if (state.view === "Home") {
+    document.getElementById("brand").addEventListener("change", event => {
+      event.preventDefault();
+      store.Global.selectedBrand = event.target.value;
+      router.navigate("/Destinations");
+    });
+  }
   //   myButton.addEventListener("click", function() {
   //     myPopup.classList.add("show");
   //   });
