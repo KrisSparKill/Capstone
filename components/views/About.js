@@ -5,7 +5,7 @@ export default () => html`
   <main>
     <div class="flexContainer">
       <img src=${mtnTrees} class="trees" />
-      <div class="orangeBkgrnd">
+      <div class="aotg secondaryBkgrnd">
         <h3>About Adventures on the Go</h3>
         <br />
         <br />

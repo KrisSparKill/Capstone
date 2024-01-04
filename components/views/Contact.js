@@ -4,7 +4,7 @@ import mtnTrees from "../../assets/img/MountainsTrees.png";
 export default () => html`
   <div class="flexContainer">
     <img src=${mtnTrees} class="trees" />
-    <div class="orangeBkgrnd">
+    <div class="aotg secondaryBkgrnd">
       <h1>Get in Touch</h1>
       <div class="form">
         <form action="https://formspree.io/f/xeqbypkl" method="POST">
