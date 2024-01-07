@@ -31,6 +31,9 @@ function afterRender(state) {
       router.navigate("/Destinations");
     });
   }
+
+  //Adding brands
+
   //   myButton.addEventListener("click", function() {
   //     myPopup.classList.add("show");
   //   });

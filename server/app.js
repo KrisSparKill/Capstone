@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-import mongoose, { trusted } from "mongoose";
+import mongoose from "mongoose";
 
 dotenv.config();
 
