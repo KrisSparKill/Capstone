@@ -6,5 +6,5 @@ export default {
     { name: "Hidden Adventures Travel Co", class: "hatco" },
     { name: "Pursue Your Dreams Travel", class: "pyd" }
   ],
-  nonThemedViews: ["Home", "About", "Contact", "Join"]
+  nonThemedViews: ["Home", "About", "Contact"]
 };

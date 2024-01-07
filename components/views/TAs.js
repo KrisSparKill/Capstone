@@ -7,7 +7,7 @@ export default () => html`
       <img src=${mtnTrees} class="trees" />
       <div class="aotg secondaryBkgrnd">
         <section id="join">
-          <form id ="join" method="POST" action="">
+          <form id ="newBrand" method="POST" action="">
             <h2>Join Adventures On The Go</h2>
             <p>Are you looking to expand your agency's interaction with your clients?
               We offer the ability to have your clients use our co-branded app. Register below and we will be in touch!</p>

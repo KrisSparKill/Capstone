@@ -45,13 +45,3 @@ export default state => html`
     </div>
   </main>
 `;
-/* <button id="mybutton">
-<div id="myPopup" class="popup">
-              <div class="popup-content">
-                <h3>Your Itinerary</h3>
-
-                <button id="closePopup">
-                  Close
-                </button>
-              </div>
-            </div> */

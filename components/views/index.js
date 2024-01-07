@@ -4,3 +4,4 @@ export { default as Activity } from "./Activity";
 export { default as Destinations } from "./Destinations";
 export { default as Home } from "./Home";
 export { default as TAs } from "./TAs";
+export { default as Brands } from "./Brands";

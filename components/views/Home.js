@@ -20,18 +20,6 @@ export default () => html`
           )
           .join("")}
       </select>
-
-      <!-- <div class="dropdown" class="trees">
-        <button class="dropbtn">
-          Select Your Travel Agency
-          <span class="material-symbols-outlined">expand_more </span>
-        </button>
-        <div class="dropdown-content">
-          <a href="/Destinations" data-navigo>I Don't Have One</a>
-          <a href="/Destinations" data-navigo>Hidden Adventures Travel Co</a>
-          <a href="/Destinations" data-navigo>Pursue Your Dreams Travel</a>
-        </div>
-      </div> -->
     </div>
   </div>
 `;
