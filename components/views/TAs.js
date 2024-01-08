@@ -42,10 +42,10 @@ export default () => html`
               />
             </div>
             <div>
-              <label for="class">Agency Abbreviation:</label>
+              <label for="abbreviation">Agency Abbreviation:</label>
               <input
               type="text"
-              name="class"
+              name="abbreviation"
               id="class"
               placeholder="Example: AOTG"
               required

@@ -31,6 +31,14 @@ function afterRender(state) {
       router.navigate("/Destinations");
     });
   }
+  if (state.view === "Scavenger") {
+    var elems = document.getElementsByClassName("box");
+    Array.from(elems).forEach(v =>
+      v.addEventListener("change", function() {
+        this.parentNode.classList.toggle("checked");
+      })
+    );
+  }
 }
 
 router.hooks({

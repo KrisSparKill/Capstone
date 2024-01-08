@@ -103,6 +103,10 @@ p {
   max-width: 500px;
 }
 
+.checked {
+  text-decoration: line-through;
+}
+
 .secondaryBkgrnd {
   background-color: var(--tertiary-color);
 }

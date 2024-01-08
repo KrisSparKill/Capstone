@@ -7,3 +7,5 @@ export { default as Home } from "./Home";
 export { default as Global } from "./Global";
 export { default as TAs } from "./TAs";
 export { default as Brands } from "./Brands";
+export { default as Barcrawl } from "./Barcrawl";
+export { default as Scavenger } from "./Scavenger";
