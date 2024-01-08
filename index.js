@@ -39,6 +39,32 @@ function afterRender(state) {
       })
     );
   }
+  if (state.view === "TAs") {
+    document.querySelector("form").addEventListener("submit", event => {
+      event.preventDefault();
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
+      const requestData = {
+        contact: inputList.contact.value,
+        email: inputList.email.value,
+        agency: inputList.agency.value,
+        abbreviation: inputList.abbreviation.value,
+        primaryBkgrnd: inputList.primaryBkgrnd.value,
+        secondaryBkgrnd: inputList.secondaryBkgrnd.value
+      };
+      console.log("request Body", requestData);
+
+      axios
+        .post(`${process.env.BRANDS_API_URL}/brands`, requestData)
+        .then(response => {
+          store.Brands.brands.push(response.data);
+          router.navigate("/Brand");
+        })
+        .catch(error => {
+          console.log("No Brands", error);
+        });
+    });
+  }
 }
 
 router.hooks({

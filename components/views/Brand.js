@@ -12,7 +12,7 @@ export default state => html`
     </tr>
     ${state.brands
       .map(brand => {
-        return `<tr><td>${brand.contact}</td><td>${brand.email}</td><td>${brand.agency}</td><td>${brand.primaryColor}</td><td>${brand.secondaryColor}</td></tr>`;
+        return `<tr><td>${brand.contact}</td><td>${brand.email}</td><td>${brand.agency}</td><td>${brand.primaryBkgrnd}</td><td>${brand.secondaryBkgrnd}</td></tr>`;
       })
       .join("")}
   </table>
