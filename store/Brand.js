@@ -1,5 +1,5 @@
 export default {
   header: "The Brands Collection",
-  view: "Brands",
+  view: "Brand",
   brands: []
 };

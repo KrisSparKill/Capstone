@@ -4,7 +4,7 @@ export default [
   { title: "Destinations", text: "Destinations" },
   { title: "Activity", text: "Check out What You Can Do" },
   { title: "TAs", text: "Add Your Agency" },
-  { title: "Brands", text: "Brands List" },
+  { title: "Brand", text: "Brands List" },
   { title: "Scavenger", text: "Scavenger Hunt" },
   { title: "Barcrawl", text: "Bar Crawl" }
 ];
