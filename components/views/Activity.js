@@ -23,9 +23,11 @@ export default state => html`
             <br /><strong>Carnival Sunshine</strong><br />
             <img src=${sun} class="center" />
           </div>
-          <div class="fun"><br /><strong>Fun Activities</strong><br /></div>
-          <a href="Scavenger" data-navigo>Scavenger Hunt</a>
-          <a href="Barcrawl" data-navigo>Bar Crawl</a>
+          <div class="fun">
+            <br /><strong>Fun Activities</strong><br />
+            <a href="Scavenger" data-navigo>Scavenger Hunt</a>
+            <a href="Barcrawl" data-navigo>Bar Crawl</a>
+          </div>
           <div class="excursions"><br /><strong>Port Stops</strong><br /></div>
           <div class="packing">
             <br /><strong>Packing Lists and Other Info</strong><br />
