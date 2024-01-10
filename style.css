@@ -68,7 +68,12 @@ h1 {
   font-size: 32px;
 }
 
-h2, h3 {
+h2 {
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+h3 {
   color: var(--secondary-color);
   text-align: center;
 }
@@ -96,6 +101,10 @@ p {
   margin-right: auto;
   margin-left: auto;
   max-width: 500px;
+}
+
+.checked {
+  text-decoration: line-through;
 }
 
 .secondaryBkgrnd {
@@ -247,7 +256,7 @@ p {
   text-align: center;
 }
 
-.popup {
+/* .popup {
   position: fixed;
   z-index: 1;
   left: 0;
@@ -269,13 +278,11 @@ p {
 .popup-content button {
   display: block;
   margin: 0 auto;
-}
-.show {
+} */
+
+/* .show {
   display: block;
-}
-h3 {
-  color: var(--secondary-color);
-}
+} */
 
 /*Form*/
 .form {
@@ -303,7 +310,6 @@ h3 {
   color: var(--secondary-color);
   border-radius: 10px;
   padding: 5px;
-
 }
 
 /*Footer*/

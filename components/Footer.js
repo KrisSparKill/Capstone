@@ -9,8 +9,10 @@ export default state => {
     <footer class="${brand} secondaryBkgrnd">
       <br />
       <br />
-      <a href="/Home">Home</a> | <a href="/About">About</a> |
-      <a href="/Contact">Contact</a>
+      <a href="/Home" data-navigo>Home</a> |
+      <a href="/About" data-navigo>About</a> |
+      <a href="/Contact" data-navigo>Contact</a> |
+      <a href="/Advisors" data-navigo> Travel Advisors</a>
       <br />
       <br />
       &copy; Adventures on the Go<br />

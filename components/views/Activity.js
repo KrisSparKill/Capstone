@@ -8,7 +8,6 @@ import * as store from "../../store";
 export default state => html`
   <main>
     <div class="flexContainer">
-      <img src=${mtnTrees} class="trees" />
       <div class="${store.Global.selectedBrand} secondaryBkgrnd">
         <div class="activities">
           <div class="itinerary">
@@ -23,7 +22,11 @@ export default state => html`
             <br /><strong>Carnival Sunshine</strong><br />
             <img src=${sun} class="center" />
           </div>
-          <div class="fun"><br /><strong>Fun Activities</strong><br /></div>
+          <div class="fun">
+            <br /><strong>Fun Activities</strong><br />
+            <a href="Scavenger" data-navigo>Scavenger Hunt</a>
+            <a href="Barcrawl" data-navigo>Bar Crawl</a>
+          </div>
           <div class="excursions"><br /><strong>Port Stops</strong><br /></div>
           <div class="packing">
             <br /><strong>Packing Lists and Other Info</strong><br />
@@ -45,13 +48,3 @@ export default state => html`
     </div>
   </main>
 `;
-/* <button id="mybutton">
-<div id="myPopup" class="popup">
-              <div class="popup-content">
-                <h3>Your Itinerary</h3>
-
-                <button id="closePopup">
-                  Close
-                </button>
-              </div>
-            </div> */
