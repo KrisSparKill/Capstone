@@ -1,4 +1,4 @@
 export default {
   header: "The Travel Advisor's Page",
-  view: "TAs"
+  view: "Advisors"
 };

@@ -22,7 +22,7 @@ export default () => html`
               />
             </div>
             <div>
-              <label for="email">Contact's Email:</label>
+              <label for="email">Contact Email:</label>
               <input
               type="text"
               name="email"
@@ -71,7 +71,7 @@ export default () => html`
               required
               />
             </div>
-            <input type="submit" name="submit" value="Join AOTG" />
+            <input type="submit" name="submit" value="Submit Brand" />
 </form>
       </div>
     </div>

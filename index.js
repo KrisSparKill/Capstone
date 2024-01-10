@@ -1,6 +1,5 @@
 import { Header, Main, Footer } from "./components";
 import * as store from "./store";
-
 import Navigo from "navigo";
 import { capitalize } from "lodash";
 import axios from "axios";
@@ -39,7 +38,15 @@ function afterRender(state) {
       })
     );
   }
-  if (state.view === "TAs") {
+  if (state.view === "Barcrawl") {
+    var elems1 = document.getElementsByClassName("box");
+    Array.from(elems1).forEach(v =>
+      v.addEventListener("change", function() {
+        this.parentNode.classList.toggle("checked");
+      })
+    );
+  }
+  if (state.view === "Advisors") {
     document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
       const inputList = event.target.elements;

@@ -41,6 +41,16 @@ router.get("/:id", async (request, response) => {
   }
 });
 
+router.delete("/:id", async (request, response) => {
+  try {
+    const data = await Brand.findByIdAndRemove(request.params.id, {});
+    response.json(data);
+  } catch (error) {
+    console.log(error);
+    return response.status(500).json(error.errors);
+  }
+});
+
 router.put("/:id", async (request, response) => {
   try {
     const body = request.body;

@@ -8,7 +8,6 @@ import * as store from "../../store";
 export default state => html`
   <main>
     <div class="flexContainer">
-      <img src=${mtnTrees} class="trees" />
       <div class="${store.Global.selectedBrand} secondaryBkgrnd">
         <div class="activities">
           <div class="itinerary">
