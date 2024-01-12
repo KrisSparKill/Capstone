@@ -46,19 +46,15 @@ export default state => html`
               ><img width="50%" height="50%" src=${kbyg}
             /></a>
           </div>
-
+<!-- div class="dining"><br />Dining Recommendations<br /></div -->
           <!-- Weather Info -->
           <div class="weather">
             <strong>
               <br />
-              Weather</strong
-            ><br /><br /><u>Charleston</u><br />
-            The five-day forecast for ${state.nassau.city} includes
-            <br /><br /><u>Nassau</u><br />The five-day forecast for
-            ${state.nassau.city} includes
-          </div>
-          <!--div class="dining"><br />Dining Recommendations<br /></div-->
-        </div>
+              Weather</strong>
+
+${state.weathermap};
+
       </div>
     </div>
   </main>
