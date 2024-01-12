@@ -6,30 +6,34 @@ const brandSchema = new mongoose.Schema({
     required: true,
     validate: /^[A-Za-z0-9 ]*$/
   },
+
   email: {
     type: String,
-    required: true,
-    validate: /^[A-Za-z0-9 ]*$/
+    required: true
   },
+
   agency: {
     type: String,
     required: true,
     validate: /^[A-Za-z0-9 ]*$/
   },
+
   abbreviation: {
     type: String,
     required: true,
     validate: /^[A-Za-z0-9 ]*$/
   },
+
   primaryBkgrnd: {
     type: String,
     required: true,
-    validate: /^[A-Za-z0-9 ]*$/
+    validate: /^[A-Za-z0-9#: ]*$/
   },
+
   secondaryBkgrnd: {
     type: String,
     required: true,
-    validate: /^[A-Za-z0-9 ]*$/
+    validate: /^[A-Za-z0-9#: ]*$/
   }
 });
 

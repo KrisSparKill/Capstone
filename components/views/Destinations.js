@@ -1,5 +1,4 @@
 import html from "html-literal";
-import mtnTrees from "../../assets/img/MountainsTrees.png";
 import * as store from "../../store";
 
 export default () => html`
