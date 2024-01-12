@@ -153,7 +153,7 @@ p {
   display: block;
 }
 
-/*Activities Page*/
+/*Activities View*/
 .activities {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -254,6 +254,57 @@ p {
   margin:2px;
   color: var(--secondary-color);
   text-align: center;
+}
+
+/* Scavenger View */
+#scavengerHunt.scavenger {
+  color: var(--secondary-color);
+}
+
+.preCruise {
+  background-color: var(--text-primary-color);
+  border-radius: 10px;
+  padding: 2px;
+  margin: 2px;
+  color: var(--secondary-color);
+  text-align:center;
+}
+
+.embarkation {
+  background-color: var(--text-primary-color);
+  border-radius: 10px;
+  padding: 2px;
+  margin: 2px;
+  color: var(--secondary-color);
+  text-align:center;
+}
+
+.sailing {
+  background-color: var(--text-primary-color);
+  border-radius: 10px;
+  padding: 2px;
+  margin: 2px;
+  color: var(--secondary-color);
+  text-align:center;
+}
+
+.ports {
+  background-color: var(--text-primary-color);
+  border-radius: 10px;
+  padding: 2px;
+  margin: 2px;
+  color: var(--secondary-color);
+  text-align:center;
+}
+
+/* Barcrawl View */
+#barCrawl {
+  color: var(--secondary-color);
+  background-color: var(--text-primary-color);
+  border-radius: 10px;
+  padding: 2px;
+  margin: 2px;
+  text-align:center;
 }
 
 /* .popup {

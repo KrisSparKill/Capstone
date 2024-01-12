@@ -75,51 +75,28 @@ function afterRender(state) {
 }
 
 router.hooks({
-  before: async (done, params) => {
+  before: (done, params) => {
     const view =
       params && params.data && params.data.view
         ? capitalize(params.data.view)
         : "Activity";
-
     switch (view) {
       case "Activity":
-        await axios
+        axios
           .get(
-            `https://api.openweathermap.org/data/2.5/forecast?q=Charleston&exclude=minutely,hourly,alerts&units=imperial&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
+            `http://maps.openweathermap.org/maps/2.0/weather/TA2/2/1/2?appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
           )
           .then(response => {
-            const kelvinToFahrenheit = kelvinTemp =>
-              Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
-            store.Activity.charleston = {
-              city: response.data.name,
-              temp: kelvinToFahrenheit(response.data.main.temp),
-              feelsLike: kelvinToFahrenheit(response.data.main.feels_like),
-              description: response.data.weather[0].main
-            };
+            console.log("response", response);
+            done();
           })
-          .catch(err => {
-            console.log(err);
+          .catch(error => {
+            console.log("No Weather For You", error);
+            done();
           });
-        await axios
-          .get(
-            `https://api.openweathermap.org/data/2.5/forecast?q=Nassau&exclude=minutely,hourly,alerts&units=imperial&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
-          )
-          .then(response => {
-            const kelvinToFahrenheit = kelvinTemp =>
-              Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
-            store.Activity.nassau = {
-              city: response.data.name,
-              temp: kelvinToFahrenheit(response.data.main.temp),
-              feelsLike: kelvinToFahrenheit(response.data.main.feels_like),
-              description: response.data.weather[0].main
-            };
-          })
-          .catch(err => {
-            console.log(err);
-          });
-        done();
         break;
       default:
+        done();
     }
   },
   already: params => {
@@ -127,7 +104,6 @@ router.hooks({
       params && params.data && params.data.view
         ? capitalize(params.data.view)
         : "Activity";
-
     render(store[view]);
   }
 });

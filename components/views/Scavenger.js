@@ -4,7 +4,7 @@ import * as store from "../../store";
 export default () => html`
   <main>
     <div class="${store.Global.selectedBrand} secondaryBkgrnd">
-      <div id="scavengerHunt">
+      <div class="scavenger" id="scavengerHunt">
         <h1>Selfie/Photo Scavenger Hunt</h1>
         <div class="preCruise">
           <h3>Pre-Cruise</h3>
@@ -12,10 +12,10 @@ export default () => html`
             Keep that camera handy, and immortalize those moments, making the
             trip even more grand before it officially beings
           </p>
-          <p id="box1">
+          <h6 id="box1">
             <input type="checkbox" class="box" />Luggage posed, your tickets
             close, snap that selfie before it goes!
-          </p>
+          </h6>
           <p id="box2">
             <input type="checkbox" class="box" />Wings or wheels in motion's
             deal, grab that shot, your travel's seal.
