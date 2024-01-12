@@ -75,37 +75,51 @@ function afterRender(state) {
 }
 
 router.hooks({
-  before: (done, params) => {
+  before: async (done, params) => {
     const view =
       params && params.data && params.data.view
         ? capitalize(params.data.view)
         : "Activity";
+
     switch (view) {
       case "Activity":
-        axios
+        await axios
           .get(
-            `https://api.openweathermap.org/data/2.5/weather?appid=${process.env.OPEN_WEATHER_MAP_API_KEY}&q=Charleston`
+            `https://api.openweathermap.org/data/2.5/forecast?q=Charleston&exclude=minutely,hourly,alerts&units=imperial&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
           )
           .then(response => {
             const kelvinToFahrenheit = kelvinTemp =>
               Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
-
-            store.Activity.weather = {
+            store.Activity.charleston = {
               city: response.data.name,
               temp: kelvinToFahrenheit(response.data.main.temp),
               feelsLike: kelvinToFahrenheit(response.data.main.feels_like),
               description: response.data.weather[0].main
             };
-
-            done();
           })
           .catch(err => {
             console.log(err);
-            done();
           });
+        await axios
+          .get(
+            `https://api.openweathermap.org/data/2.5/forecast?q=Nassau&exclude=minutely,hourly,alerts&units=imperial&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
+          )
+          .then(response => {
+            const kelvinToFahrenheit = kelvinTemp =>
+              Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
+            store.Activity.nassau = {
+              city: response.data.name,
+              temp: kelvinToFahrenheit(response.data.main.temp),
+              feelsLike: kelvinToFahrenheit(response.data.main.feels_like),
+              description: response.data.weather[0].main
+            };
+          })
+          .catch(err => {
+            console.log(err);
+          });
+        done();
         break;
       default:
-        done();
     }
   },
   already: params => {
