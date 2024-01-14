@@ -65,7 +65,7 @@ function afterRender(state) {
         .post(`${process.env.BRANDS_API_URL}/brands`, requestData)
         .then(response => {
           store.Brands.brands.push(response.data);
-          router.navigate("/Brand");
+          router.navigate("/Home");
         })
         .catch(error => {
           console.log("No Brands", error);
@@ -84,10 +84,16 @@ router.hooks({
       case "Activity":
         axios
           .get(
-            `http://maps.openweathermap.org/maps/2.0/weather/TA2/2/1/2?appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
+            `https://api.openweathermap.org/data/2.5/forecast?lat=25.03&lon=77.39&units=imperial&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
           )
           .then(response => {
             console.log("response", response);
+
+            store.Activity.weather = {
+              city: response.data.name,
+              minTemp: response.data.main.temp_min,
+              maxTemp: response.data.main.temp_max
+            };
             done();
           })
           .catch(error => {

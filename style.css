@@ -27,6 +27,12 @@ body {
   height: 100vh;
 }
 
+@media (max-width: 360px) {
+  .activities {
+    display: flex;
+  }
+}
+
 .pyd.primaryBkgrnd {
   background-color: #f3f2ee;
 }
@@ -35,14 +41,14 @@ body {
   background-color: #5bc4c3;
 }
 
-
 .hatco.primaryBkgrnd {
-  background-color: black;
+  background-image: url("/assets/img/HATCoBkgrnd.jpg");
 }
 
 .hatco.secondaryBkgrnd {
   background-color: #29abe2;
 }
+
 
 .aotg.primaryBkgrnd {
   background-color: var(--primary-color);
@@ -66,21 +72,31 @@ h1 {
   color: var(--secondary-color);
   text-align: center;
   font-size: 32px;
+  padding: 2px;
 }
 
 h2 {
   color: var(--secondary-color);
   text-align: center;
+  padding: 2px;
 }
 
 h3 {
   color: var(--secondary-color);
   text-align: center;
+  padding: 2px;
+}
+
+h4 {
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 2px;
 }
 
 p {
-  color: var(--text-primary-color);
+  color: var(--secondary-color);
   text-align: center;
+  padding: 2px;
 }
 
 .flexContainer {
@@ -157,7 +173,7 @@ p {
 .activities {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr;
   padding: 4px;
 }
 
@@ -200,7 +216,7 @@ p {
   text-align: center;
 }
 
-.fun {
+.weather {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -228,11 +244,11 @@ p {
   text-align: center;
 }
 
-.weather {
+.fun {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-end: 6;
   background-color: var(--text-primary-color);
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
@@ -246,7 +262,7 @@ p {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-end: 6;
   background-color: var(--text-primary-color);
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
@@ -257,53 +273,44 @@ p {
 }
 
 /* Scavenger View */
-#scavengerHunt.scavenger {
-  color: var(--secondary-color);
-}
-
 .preCruise {
   background-color: var(--text-primary-color);
   border-radius: 10px;
-  padding: 2px;
-  margin: 2px;
-  color: var(--secondary-color);
+  padding: 10px;
+  margin: 10px;
   text-align:center;
 }
 
 .embarkation {
   background-color: var(--text-primary-color);
   border-radius: 10px;
-  padding: 2px;
-  margin: 2px;
-  color: var(--secondary-color);
+  padding: 10px;
+  margin: 10px;
   text-align:center;
 }
 
 .sailing {
   background-color: var(--text-primary-color);
   border-radius: 10px;
-  padding: 2px;
-  margin: 2px;
-  color: var(--secondary-color);
+  padding: 10px;
+  margin: 10px;
   text-align:center;
 }
 
 .ports {
   background-color: var(--text-primary-color);
   border-radius: 10px;
-  padding: 2px;
-  margin: 2px;
-  color: var(--secondary-color);
+  padding: 10px;
+  margin: 10px;
   text-align:center;
 }
 
 /* Barcrawl View */
 #barCrawl {
-  color: var(--secondary-color);
   background-color: var(--text-primary-color);
   border-radius: 10px;
-  padding: 2px;
-  margin: 2px;
+  padding: 10px;
+  margin: 10px;
   text-align:center;
 }
 

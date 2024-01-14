@@ -8,14 +8,14 @@ export default () => html`
         <h1>Selfie/Photo Scavenger Hunt</h1>
         <div class="preCruise">
           <h3>Pre-Cruise</h3>
-          <p>
+          <h4>
             Keep that camera handy, and immortalize those moments, making the
             trip even more grand before it officially beings
-          </p>
-          <h6 id="box1">
+          </h4>
+          <p id="box1">
             <input type="checkbox" class="box" />Luggage posed, your tickets
             close, snap that selfie before it goes!
-          </h6>
+          </p>
           <p id="box2">
             <input type="checkbox" class="box" />Wings or wheels in motion's
             deal, grab that shot, your travel's seal.
@@ -90,10 +90,10 @@ export default () => html`
         </div>
         <div class="sailing">
           <h3>While Sailing</h3>
-          <p>
+          <h4>
             Each moment's a trinket, a gem of the sea, tuck them in your camera,
             keepsakes to be.
-          </p>
+          </h4>
           <p id="box19">
             <input type="checkbox" class="box" />Brunch on days of high
             tides,savor the moments where true bliss abides.
@@ -193,10 +193,10 @@ export default () => html`
         </div>
         <div class="ports">
           <h3>Port Stops</h3>
-          <p>
+          <h4>
             Port adventures a world anew, return with pictures for your at home
             crew!
-          </p>
+          </h4>
           <p id="box43">
             <input type="checkbox" class="box" />With Nassau’s landmark,
             standing proud, snap that sign amidst the crowd.

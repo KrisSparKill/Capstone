@@ -16,6 +16,9 @@ export default () => html`
         <p>Remember, this journey is not a race, but an excursion to savor. With no captains at the helm, you chart your own course. Navigate by the stars or follow the clues, but most of all good sailors know when it is time to drop anchors and savor the harbor's delights.</p>
         <p> So ready your sea legs, for tonight we toast to the moon's reflection on ocean's repose, to the clinking of glasses, to new friends and companions, and to hidden adventures that await. Here's to your Crew's Bar Crawl on the High Seas - may your memories be as full as your cups!</p>
         <p>Cheers to your quest, and may your journey be as spirited as the company you keep!</p>
+        <br>
+        <br>
+        <h3> Find the Bars/ Pubs On Board Your Ship</h3>
         <p id="box1">
           <input type="checkbox" class="box" />At the ship's proud prow, where whispers wind, serenity found and peace of mind. To start your quest with tastes refined, where Sangrias sip and hearts unwind.
         </p>

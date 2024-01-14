@@ -7,10 +7,9 @@ const brandSchema = new mongoose.Schema({
     validate: /^[A-Za-z0-9 ]*$/
   },
 
-  email: {
-    type: String,
-    required: true
-  },
+  // email: {
+  //   type: String
+  // },
 
   agency: {
     type: String,

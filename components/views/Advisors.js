@@ -21,7 +21,7 @@ export default () => html`
               required
               />
             </div>
-            <div>
+            <!-- <div>
               <label for="email">Contact Email:</label>
               <input
               type="text"
@@ -30,7 +30,7 @@ export default () => html`
               placeholder="hello@aotg.com"
               required
               />
-            </div>
+            </div> -->
             <div>
               <label for="agency">Agency Name:</label>
               <input
