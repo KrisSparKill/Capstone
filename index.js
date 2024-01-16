@@ -30,6 +30,17 @@ function afterRender(state) {
       router.navigate("/Destinations");
     });
   }
+
+  if (state.view === "Destinations") {
+    const activityDropdown = document.getElementById("activityDropdown");
+    activityDropdown.addEventListener("change", () => {
+      const selectedSailing = activityDropdown.value;
+      if (selectedSailing) {
+        router.navigate("/Activity");
+      }
+    });
+  }
+
   if (state.view === "Scavenger") {
     var elems = document.getElementsByClassName("box");
     Array.from(elems).forEach(v =>
@@ -64,42 +75,38 @@ function afterRender(state) {
       axios
         .post(`${process.env.BRANDS_API_URL}/brands`, requestData)
         .then(response => {
-          store.Brands.brands.push(response.data);
-          router.navigate("/Home");
+          store.Brand.brands.push(response.data);
+          router.navigate("/Brand");
         })
         .catch(error => {
-          console.log("No Brands", error);
+          console.log("No New Brand", error);
         });
     });
   }
 }
 
 router.hooks({
-  before: (done, params) => {
+  before: async (done, params) => {
     const view =
       params && params.data && params.data.view
         ? capitalize(params.data.view)
         : "Activity";
     switch (view) {
       case "Activity":
-        axios
-          .get(
-            `https://api.openweathermap.org/data/2.5/forecast?lat=25.03&lon=77.39&units=imperial&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
-          )
-          .then(response => {
-            console.log("response", response);
+        try {
+          const response = await axios.get(
+            `https://api.openweathermap.org/data/2.5/forecast?lat=25.04&lon=-77.39&units=imperial&exclude=hourly&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
+          );
+          const weatherData = parseWeatherData(response.data);
+          console.log("Weather Data:", weatherData);
 
-            store.Activity.weather = {
-              city: response.data.name,
-              minTemp: response.data.main.temp_min,
-              maxTemp: response.data.main.temp_max
-            };
-            done();
-          })
-          .catch(error => {
-            console.log("No Weather For You", error);
-            done();
-          });
+          store.Activity.weather = weatherData;
+
+          done();
+        } catch (error) {
+          console.error("No Weather For You", error);
+          done();
+        }
         break;
       default:
         done();
@@ -114,6 +121,21 @@ router.hooks({
   }
 });
 
+function parseWeatherData(apiData) {
+  console.log("API Data:", apiData);
+  const forecastData = apiData.list.slice(0, 5).map(item => {
+    return {
+      dateTime: item.dt_txt,
+      minTemp: item.main.temp_min,
+      maxTemp: item.main.temp_max
+    };
+  });
+  return {
+    city: apiData.city.name,
+    forecast: forecastData
+  };
+}
+
 router
   .on({
     "/": () => render(),
@@ -122,7 +144,7 @@ router
       if (view in store) {
         render(store[view]);
       } else {
-        render(store.Home);
+        render(store.Viewnotfound);
         console.log(`View ${view} not defined`);
       }
     }

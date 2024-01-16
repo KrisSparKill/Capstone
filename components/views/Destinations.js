@@ -6,13 +6,14 @@ export default () => html`
     <div class="${store.Global.selectedBrand} secondaryBkgrnd">
       <h2>Please select your Sailing Below</h2>
       <div class="dropdown">
-        <button class="dropbtn">
-          Select Your Cruise Ship
-          <span class="material-symbols-outlined">expand_more </span>
-        </button>
-        <div class="dropdown-content">
-          <a href="/Activity" data-navigo>Carnival Sunshine 10/21/2024</a>
-        </div>
+        <select id="activityDropdown">
+          <option value="">Select Sailing</option>
+          <option value="CarnivalSunshine-2024-10-21"
+            >Carnival Sunshine 10/21/2024</option
+          >
+          <!-- <option value=""></option>
+            <option value=""></option> -->
+        </select>
       </div>
     </div>
   </div>

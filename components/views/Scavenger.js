@@ -3,6 +3,14 @@ import * as store from "../../store";
 
 export default () => html`
   <main>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0&appId=685484360321956"
+      nonce="UEHHwk49"
+    ></script>
     <div class="${store.Global.selectedBrand} secondaryBkgrnd">
       <div class="scavenger" id="scavengerHunt">
         <h1>Selfie/Photo Scavenger Hunt</h1>

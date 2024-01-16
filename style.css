@@ -27,10 +27,33 @@ body {
   height: 100vh;
 }
 
-@media (max-width: 360px) {
-  .activities {
-    display: flex;
-  }
+@media only screen and (max-width: 450px) {
+.main {
+  height: auto;
+  width: auto;
+}
+
+.trees {
+  max-width: 350px;
+}
+
+.fb-login-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center {
+  max-width: 350px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+}
 }
 
 .pyd.primaryBkgrnd {
@@ -60,12 +83,6 @@ body {
 
 header {
   position: relative;
-}
-
-nav {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 h1 {
@@ -108,8 +125,8 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 350px;
+  max-height: 350px;
 }
 
 .trees {
@@ -127,45 +144,11 @@ p {
   background-color: var(--tertiary-color);
 }
 
-/* Dropdown Button - Select Your Travel Agency*/
-.dropbtn {
-  background-color: var(--text-primary-color);
-  color: var(--secondary-color);
-  padding: 12px;
-  font-size: 16px;
-  border: .5px solid var(--secondary-color);
-  box-shadow: 0px 8px 16px 0px var(--secondary-color);
-}
+/* Dropdown Menus*/
 
 .dropdown {
   text-align: center;
   position: relative;
-  display: block;
-}
-
-.dropdown-content {
-  text-align: center;
-  display: none;
-  position: relative;
-  background-color: var(--text-primary-color);
-  box-shadow: 0px 8px 8px 0px var(--secondary-color);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: var(--secondary-color);
-  padding: 12px 12px;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: var(--text-secondary-color);
-  color: var(--text-primary-color);
-}
-
-.dropdown:hover .dropdown-content {
   display: block;
 }
 
@@ -368,6 +351,13 @@ p {
   color: var(--secondary-color);
   border-radius: 10px;
   padding: 5px;
+}
+
+/* Brand */
+#brands {
+  border-radius: 10px;
+  border-color: var(--secondary-color);
+  border: 1px;
 }
 
 /*Footer*/

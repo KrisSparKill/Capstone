@@ -1,5 +1,8 @@
 export default {
   header: "My Activities Page",
   view: "Activity",
-  weather: []
+  weather: {
+    city: "",
+    forecast: []
+  }
 };

@@ -9,3 +9,4 @@ export { default as Advisors } from "./Advisors";
 export { default as Brand } from "./Brand";
 export { default as Barcrawl } from "./Barcrawl";
 export { default as Scavenger } from "./Scavenger";
+export { default as Viewnotfound } from "./Viewnotfound";
