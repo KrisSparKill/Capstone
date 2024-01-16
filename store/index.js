@@ -6,6 +6,7 @@ export { default as Links } from "./Links";
 export { default as Home } from "./Home";
 export { default as Global } from "./Global";
 export { default as Advisors } from "./Advisors";
-export { default as Brands } from "./Brand";
+export { default as Brand } from "./Brand";
 export { default as Barcrawl } from "./Barcrawl";
 export { default as Scavenger } from "./Scavenger";
+export { default as Viewnotfound } from "./Viewnotfound";

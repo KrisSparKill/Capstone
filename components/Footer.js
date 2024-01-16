@@ -16,7 +16,7 @@ export default state => {
       <br />
       <br />
       &copy; Adventures on the Go<br />
-      Powered by The Travel Adventure Team LLC 2023
+      Powered by The Travel Adventure Team LLC 2023 & 2024
     </footer>
   `;
 };

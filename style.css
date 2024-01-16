@@ -27,6 +27,35 @@ body {
   height: 100vh;
 }
 
+@media only screen and (max-width: 450px) {
+.main {
+  height: auto;
+  width: auto;
+}
+
+.trees {
+  max-width: 350px;
+}
+
+.fb-login-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center {
+  max-width: 350px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+}
+}
+
 .pyd.primaryBkgrnd {
   background-color: #f3f2ee;
 }
@@ -35,14 +64,14 @@ body {
   background-color: #5bc4c3;
 }
 
-
 .hatco.primaryBkgrnd {
-  background-color: black;
+  background-image: url("/assets/img/HATCoBkgrnd.jpg");
 }
 
 .hatco.secondaryBkgrnd {
   background-color: #29abe2;
 }
+
 
 .aotg.primaryBkgrnd {
   background-color: var(--primary-color);
@@ -56,31 +85,35 @@ header {
   position: relative;
 }
 
-nav {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 h1 {
   color: var(--secondary-color);
   text-align: center;
   font-size: 32px;
+  padding: 2px;
 }
 
 h2 {
   color: var(--secondary-color);
   text-align: center;
+  padding: 2px;
 }
 
 h3 {
   color: var(--secondary-color);
   text-align: center;
+  padding: 2px;
+}
+
+h4 {
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 2px;
 }
 
 p {
-  color: var(--text-primary-color);
+  color: var(--secondary-color);
   text-align: center;
+  padding: 2px;
 }
 
 .flexContainer {
@@ -92,8 +125,8 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 350px;
+  max-height: 350px;
 }
 
 .trees {
@@ -111,15 +144,7 @@ p {
   background-color: var(--tertiary-color);
 }
 
-/* Dropdown Button - Select Your Travel Agency*/
-.dropbtn {
-  background-color: var(--text-primary-color);
-  color: var(--secondary-color);
-  padding: 12px;
-  font-size: 16px;
-  border: .5px solid var(--secondary-color);
-  box-shadow: 0px 8px 16px 0px var(--secondary-color);
-}
+/* Dropdown Menus*/
 
 .dropdown {
   text-align: center;
@@ -127,37 +152,11 @@ p {
   display: block;
 }
 
-.dropdown-content {
-  text-align: center;
-  display: none;
-  position: relative;
-  background-color: var(--text-primary-color);
-  box-shadow: 0px 8px 8px 0px var(--secondary-color);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: var(--secondary-color);
-  padding: 12px 12px;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: var(--text-secondary-color);
-  color: var(--text-primary-color);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 /*Activities View*/
 .activities {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr;
   padding: 4px;
 }
 
@@ -200,7 +199,7 @@ p {
   text-align: center;
 }
 
-.fun {
+.weather {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -228,11 +227,11 @@ p {
   text-align: center;
 }
 
-.weather {
+.fun {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-end: 6;
   background-color: var(--text-primary-color);
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
@@ -246,7 +245,7 @@ p {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-end: 6;
   background-color: var(--text-primary-color);
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
@@ -257,53 +256,44 @@ p {
 }
 
 /* Scavenger View */
-#scavengerHunt.scavenger {
-  color: var(--secondary-color);
-}
-
 .preCruise {
   background-color: var(--text-primary-color);
   border-radius: 10px;
-  padding: 2px;
-  margin: 2px;
-  color: var(--secondary-color);
+  padding: 10px;
+  margin: 10px;
   text-align:center;
 }
 
 .embarkation {
   background-color: var(--text-primary-color);
   border-radius: 10px;
-  padding: 2px;
-  margin: 2px;
-  color: var(--secondary-color);
+  padding: 10px;
+  margin: 10px;
   text-align:center;
 }
 
 .sailing {
   background-color: var(--text-primary-color);
   border-radius: 10px;
-  padding: 2px;
-  margin: 2px;
-  color: var(--secondary-color);
+  padding: 10px;
+  margin: 10px;
   text-align:center;
 }
 
 .ports {
   background-color: var(--text-primary-color);
   border-radius: 10px;
-  padding: 2px;
-  margin: 2px;
-  color: var(--secondary-color);
+  padding: 10px;
+  margin: 10px;
   text-align:center;
 }
 
 /* Barcrawl View */
 #barCrawl {
-  color: var(--secondary-color);
   background-color: var(--text-primary-color);
   border-radius: 10px;
-  padding: 2px;
-  margin: 2px;
+  padding: 10px;
+  margin: 10px;
   text-align:center;
 }
 
@@ -361,6 +351,13 @@ p {
   color: var(--secondary-color);
   border-radius: 10px;
   padding: 5px;
+}
+
+/* Brand */
+#brands {
+  border-radius: 10px;
+  border-color: var(--secondary-color);
+  border: 1px;
 }
 
 /*Footer*/
