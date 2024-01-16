@@ -11,8 +11,6 @@ export default () => html`
           <option value="CarnivalSunshine-2024-10-21"
             >Carnival Sunshine 10/21/2024</option
           >
-          <!-- <option value=""></option>
-            <option value=""></option> -->
         </select>
       </div>
     </div>

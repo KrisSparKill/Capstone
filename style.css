@@ -171,6 +171,33 @@ p {
   color: var(--secondary-color);
   text-align: center;
 }
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid var(--text-primary-color);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: darkblue;
+  color: var(--text-primary-color);
+}
+
+tr.even {
+  background-color: lightblue;
+}
+
+tr.odd {
+  background-color: lightgray;
+}
+
 .homeport {
   grid-column-start: 1;
   grid-column-end: 3;
