@@ -95,7 +95,7 @@ router.hooks({
       case "Activity":
         try {
           const response = await axios.get(
-            `https://api.openweathermap.org/data/2.5/forecast?lat=25.04&lon=-77.39&units=imperial&exclude=hourly&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
+            `https://api.openweathermap.org/data/2.5/forecast?lat=25.04&lon=-77.39&units=imperial&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
           );
           const weatherData = parseWeatherData(response.data);
           console.log("Weather Data:", weatherData);

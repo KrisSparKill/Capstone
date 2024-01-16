@@ -17,9 +17,9 @@ export default state => html`
         <div class="activities">
 
           <!-- Itinerary -->
-          <div class="itinerary"><label for="popup-toggle">
-            <br /><strong>Your Itinerary</strong><br />
-            <br><img src=${itin} class="center" />
+          <div class="itinerary">
+                <br /><strong>Your Itinerary</strong><br />
+                <br><img src=${itin} class="center" />
           </div>
 
           <!-- Homeport -->
@@ -37,7 +37,7 @@ export default state => html`
             <strong><br />5-Day Weather Forecast</strong><br><br>
             <img src=${wea} class="center" />
             <div>
-              The 5-day forecast for ${state.weather.city || "N/A"}:
+              The forecast every 3 hours for The ${state.weather.city || "N/A"}:
               ${
                 state.weather.forecast
                   ? state.weather.forecast
