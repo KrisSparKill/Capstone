@@ -86,7 +86,7 @@ function afterRender(state) {
 }
 
 router.hooks({
-  before: async (done, params) => {
+  before: (done, params) => {
     const view =
       params && params.data && params.data.view
         ? capitalize(params.data.view)
@@ -100,7 +100,7 @@ router.hooks({
           .then(response => {
             store.Activity.weather = {
               city: response.data.name,
-              dateTime: response.list.dt,
+              dateTime: response.data.list.dt,
               minTemp: response.data.list.temp.min,
               maxTemp: response.data.list.temp.max,
               description: response.data.list.weather.description

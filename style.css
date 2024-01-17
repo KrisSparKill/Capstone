@@ -152,6 +152,24 @@ p {
   display: block;
 }
 
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid var(--secondary-color);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: darkblue;
+  color: var(--text-primary-color);
+}
+
 /*Activities View*/
 .activities {
   display: grid;
@@ -170,32 +188,6 @@ p {
   border-radius: 10px;
   color: var(--secondary-color);
   text-align: center;
-}
-
-/* Table */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-th, td {
-  border: 1px solid var(--text-primary-color);
-  padding: 8px;
-  text-align: left;
-}
-
-th {
-  background-color: darkblue;
-  color: var(--text-primary-color);
-}
-
-tr.even {
-  background-color: lightblue;
-}
-
-tr.odd {
-  background-color: lightgray;
 }
 
 .homeport {
