@@ -37,7 +37,7 @@ export default state => html`
             <strong><br />5-Day Weather Forecast</strong><br><br>
             <img src=${wea} class="center" />
             <div>
-    The 5-day forecast for The ${state.weather.city}:
+    The 5-day forecast for The Bahamas:
     ${
       state.weather.forecast
         ? state.weather.forecast
@@ -47,13 +47,13 @@ export default state => html`
             Date/Time: ${day.dateTime}
             Min Temp: ${day.minTemp} °F
             Max Temp: ${day.maxTemp} °F
-            Description: ${day.description}
         </div>`
             )
             .join("")
         : "N/A"
     }
 </div>
+
 
 
           </div>

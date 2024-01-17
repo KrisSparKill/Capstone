@@ -99,16 +99,17 @@ router.hooks({
           )
           .then(response => {
             store.Activity.weather = {
-              city: response.data.name,
-              dateTime: response.data.list.dt,
-              minTemp: response.data.list.temp.min,
-              maxTemp: response.data.list.temp.max,
-              description: response.data.list.weather.description
+              forecast: response.data.list.map(day => ({
+                dateTime: day.dt,
+                minTemp: day.temp.min,
+                maxTemp: day.temp.max,
+                description: day.weather.description
+              }))
             };
             done();
           })
           .catch(err => {
-            console.log(err);
+            console.error("No Weather For You", err);
             done();
           });
         break;
