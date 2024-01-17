@@ -58,7 +58,8 @@ export default state => html`
 
           <!-- Excursions and Port Information -->
           <div class="excursions"><br /><strong>Port Stops</strong><br />
-            <a href="https://www.arrivalguides.com/en/Travelguides/Caribbean/Bahamas/NASSAU">Nassau<br><br>  <img src=${nas} class="center" /></a>
+          <a href="https://pe.tours/NTg3MjA2/">Shore Excursions</a><br>
+            <a href="https://www.arrivalguides.com/en/Travelguides/Caribbean/Bahamas/NASSAU">Nassau  <img src=${nas} class="center" /></a>
           </div>
 
           <!-- Fun Activities -->

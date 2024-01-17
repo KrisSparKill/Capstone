@@ -90,7 +90,7 @@ router.hooks({
     const view =
       params && params.data && params.data.view
         ? capitalize(params.data.view)
-        : "Activity";
+        : "Home";
     switch (view) {
       case "Activity":
         try {
@@ -108,6 +108,20 @@ router.hooks({
           done();
         }
         break;
+
+      case "Brand":
+        axios
+          .get(`${process.env.BRANDS_API_URL}/brands`)
+          .then(response => {
+            console.log("response", response.data);
+            store.Brand.brands = response.data;
+            done();
+          })
+          .catch(error => {
+            console.log("Data Not Here", error);
+            done();
+          });
+        break;
       default:
         done();
     }
@@ -116,7 +130,7 @@ router.hooks({
     const view =
       params && params.data && params.data.view
         ? capitalize(params.data.view)
-        : "Activity";
+        : "Home";
     render(store[view]);
   }
 });
