@@ -37,22 +37,24 @@ export default state => html`
             <strong><br />5-Day Weather Forecast</strong><br><br>
             <img src=${wea} class="center" />
             <div>
-              The forecast every 3 hours for The ${state.weather.city || "N/A"}:
-              ${
-                state.weather.forecast
-                  ? state.weather.forecast
-                      .map(
-                        day => `
-              <div>
-                Date/Time: ${day.dateTime}
-                Min Temp: ${day.minTemp} °F
-                Max Temp: ${day.maxTemp} °F
-              </div>`
-                      )
-                      .join("")
-                  : "N/A"
-              }
-            </div>
+    The 5-day forecast for The ${state.weather.city}:
+    ${
+      state.weather.forecast
+        ? state.weather.forecast
+            .map(
+              day => `
+        <div>
+            Date/Time: ${day.dateTime}
+            Min Temp: ${day.minTemp} °F
+            Max Temp: ${day.maxTemp} °F
+            Description: ${day.description}
+        </div>`
+            )
+            .join("")
+        : "N/A"
+    }
+</div>
+
 
           </div>
 

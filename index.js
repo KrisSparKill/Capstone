@@ -93,20 +93,24 @@ router.hooks({
         : "Home";
     switch (view) {
       case "Activity":
-        try {
-          const response = await axios.get(
-            `https://api.openweathermap.org/data/2.5/forecast?lat=25.04&lon=-77.39&units=imperial&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
-          );
-          const weatherData = parseWeatherData(response.data);
-          console.log("Weather Data:", weatherData);
-
-          store.Activity.weather = weatherData;
-
-          done();
-        } catch (error) {
-          console.error("No Weather For You", error);
-          done();
-        }
+        axios
+          .get(
+            `https://api.openweathermap.org/data/2.5/forecast/daily?lat=25.04&lon=-77.39&units=imperial&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
+          )
+          .then(response => {
+            store.Activity.weather = {
+              city: response.data.name,
+              dateTime: response.list.dt,
+              minTemp: response.data.list.temp.min,
+              maxTemp: response.data.list.temp.max,
+              description: response.data.list.weather.description
+            };
+            done();
+          })
+          .catch(err => {
+            console.log(err);
+            done();
+          });
         break;
 
       case "Brand":
@@ -134,21 +138,6 @@ router.hooks({
     render(store[view]);
   }
 });
-
-function parseWeatherData(apiData) {
-  console.log("API Data:", apiData);
-  const forecastData = apiData.list.slice(0, 5).map(item => {
-    return {
-      dateTime: item.dt_txt,
-      minTemp: item.main.temp_min,
-      maxTemp: item.main.temp_max
-    };
-  });
-  return {
-    city: apiData.city.name,
-    forecast: forecastData
-  };
-}
 
 router
   .on({
