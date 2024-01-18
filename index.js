@@ -95,7 +95,7 @@ router.hooks({
       case "Activity":
         axios
           .get(
-            `https://api.openweathermap.org/data/2.5/forecast/daily?lat=25.04&lon=-77.39&units=imperial&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
+            `https://api.openweathermap.org/data/2.5/forecast/daily?lat=25.04&lon=-77.39&cnt=5&units=imperial&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
           )
           .then(response => {
             store.Activity.weather = {
