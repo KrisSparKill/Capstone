@@ -12,7 +12,7 @@ function render(state = store.Home) {
     : store.Global.selectedBrand;
   document.querySelector("#root").innerHTML = `
   <div class="${brand} primaryBkgrnd">
-  ${Header(state)}
+  ${Header(brand)}
   ${Main(state)}
   ${Footer(state)}
   </div>
@@ -103,7 +103,8 @@ router.hooks({
                 dateTime: day.dt,
                 minTemp: day.temp.min,
                 maxTemp: day.temp.max,
-                description: day.weather.description
+                description: day.weather,
+                icon: day.weather.icon
               }))
             };
             done();

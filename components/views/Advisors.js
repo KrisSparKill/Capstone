@@ -71,7 +71,7 @@ export default () => html`
               required
               />
             </div>
-            <input type="submit" name="submit" value="Submit Brand" />
+            <input type="submit" name="submit" value="Submit Brand" id="submit"/>
 </form>
       </div>
     </div>
