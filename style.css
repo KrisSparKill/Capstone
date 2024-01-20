@@ -56,27 +56,43 @@ p {
 }
 }
 
+/* PYD Styles */
 .pyd.primaryBkgrnd {
   background-color: #f3f2ee;
 }
-
 .pyd.secondaryBkgrnd {
   background-color: #5bc4c3;
 }
+.pyd.h1,
+.pyd.h2,
+.pyd.h3 {
+  color: #013e8f;
 
+  text-align: center;
+  font-size: 32px;
+  padding: 2px;
+}
+
+/* HATCo Styles */
 .hatco.primaryBkgrnd {
   background-image: url("/assets/img/HATCoBkgrnd.jpg");
 }
-
 .hatco.secondaryBkgrnd {
   background-color: #29abe2;
 }
+.hatco.h1,
+.hatco.h2,
+.hatco.h3 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 32px;
+  padding: 2px;
+}
 
-
+/* AOTG Styles */
 .aotg.primaryBkgrnd {
   background-color: var(--primary-color);
 }
-
 .aotg.secondaryBkgrnd {
   background-color: var(--tertiary-color);
 }
@@ -92,23 +108,14 @@ h1 {
   padding: 2px;
 }
 
-h2 {
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 2px;
-}
-
-h3 {
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 2px;
-}
-
+h2,
+h3,
 h4 {
   color: var(--secondary-color);
   text-align: center;
   padding: 2px;
 }
+
 
 p {
   color: var(--secondary-color);
@@ -153,19 +160,14 @@ p {
   text-decoration: line-through;
 }
 
-.secondaryBkgrnd {
-  background-color: var(--tertiary-color);
-}
-
 /* Dropdown Menus*/
-
 .dropdown {
   text-align: center;
   position: relative;
   display: block;
 }
 
-/* Table */
+/* Brand Table */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -291,7 +293,22 @@ th {
   margin-right: auto;
   max-width: 250px;
   max-height: 250px;
-  color: var(--secondary-color);
+}
+
+#newBrand {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  max-height: 500px;
+  padding: 10px 0px 10px 0px;
+}
+
+#submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .message {
@@ -307,7 +324,6 @@ th {
   max-width: 250px;
   max-height: 250px;
   background-color: var(--text-primary-color);
-  color: var(--secondary-color);
   border-radius: 10px;
   padding: 5px;
 }

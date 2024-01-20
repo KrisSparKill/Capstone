@@ -14,6 +14,7 @@ export default state => html`
   <main>
     <div class="flexContainer">
       <div class="${store.Global.selectedBrand} secondaryBkgrnd">
+      <div class="${store.Global.selectedBrand} color">
         <div class="activities">
 
           <!-- Itinerary -->
@@ -37,7 +38,7 @@ export default state => html`
             <strong><br />5-Day Weather Forecast</strong><br><br>
             <img src=${wea} class="center" />
             <div>
-    The 5-day forecast for The Bahamas:
+            The 5-day forecast for The Bahamas:
     ${
       state.weather.forecast
         ? state.weather.forecast
@@ -45,8 +46,8 @@ export default state => html`
               day => `
         <div>
             Date/Time: ${day.dateTime}
-            Min Temp: ${day.minTemp} °F
-            Max Temp: ${day.maxTemp} °F
+            Low: ${day.minTemp} °F
+            High: ${day.maxTemp} °F
         </div>`
             )
             .join("")
@@ -80,7 +81,7 @@ export default state => html`
               href="https://www.canva.com/design/DAF5l63-XHc/MMyuSmvZqiK0VQKuDNR7XQ/view?utm_content=DAF5l63-XHc&utm_campaign=designshare&utm_medium=link&utm_source=editor"
               >Know Before You Go<br><br><img src=${trav} class = "center"></a>
           </div>
-
+  </div>
     </div>
   </main>
 `;
