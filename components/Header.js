@@ -5,9 +5,9 @@ import hatcologo from "../assets/img/hatcologo.png";
 
 export default (brand = "aotg") => {
   const logoMap = {
-    aotg: aotglogo,
-    pyd: pydlogo,
-    hatco: hatcologo
+    aotg: `${aotglogo}`,
+    pyd: `${pydlogo}`,
+    hatco: `${hatcologo}`
   };
 
   const logo = logoMap[brand] || aotglogo;
