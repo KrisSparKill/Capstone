@@ -52,7 +52,7 @@ export default () => html`
           </div>
         </div>
         <div class="${store.Global.selectedBrand} embarkation">
-          <h3>Embarkation Day</h3>
+          <div class="${store.Global.selectedBrand} h3">Embarkation Day</div>
           <div class="${store.Global.selectedBrand} p" id="box8">
             <input type="checkbox" class="box" />Ship in sight, a majestic view,
             take the pic, it's all brand new.
@@ -272,6 +272,7 @@ export default () => html`
             array, capture its colors, before the fly away.
           </div>
         </div>
+        <br />
       </div>
     </div>
   </main>

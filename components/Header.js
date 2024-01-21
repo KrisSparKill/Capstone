@@ -1,7 +1,7 @@
 import html from "html-literal";
 import aotglogo from "../assets/img/AotGLogo.png";
-import pydlogo from "../assets/img/pydlogo.png";
-import hatcologo from "../assets/img/hatcologo.png";
+import hatcologo from "../assets/img/hatcoLogo.png";
+import pydlogo from "../assets/img/pydLogo.png";
 
 export default (brand = "aotg") => {
   const logoMap = {

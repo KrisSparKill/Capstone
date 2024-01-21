@@ -7,11 +7,11 @@ export default () => html`
   <!--img src=${logo} class="center" /-->
   <div class="flexContainer">
     <div class="aotg h1">Welcome to Adventures on the Go</div>
-    <div class="aotg p">
-      Please select an option below to get started
-    </div>
     <img src=${mtnTrees} class="trees" />
     <div class="aotg secondaryBkgrnd dropdown">
+      <div class="aotg h2">
+        Please select an option below to get started
+      </div>
       <select name="brand" id="brand">
         ${store.Global.brands
           .map(
