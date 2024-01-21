@@ -45,7 +45,7 @@ export default state => html`
             <strong><br />5-Day Weather Forecast</strong><br />
             <img src=${wea} class="center" />
             <div>
-              The 5-day forecast for The Bahamas:
+              The 5-day forecast for Nassau, The Bahamas:
               ${state.weather.forecast
                 ? state.weather.forecast
                     .map(
