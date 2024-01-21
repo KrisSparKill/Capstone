@@ -46,82 +46,114 @@ body {
   max-width: 350px;
 }
 
-p {
-  font-size: 16px;
-}
-
 .flexContainer {
   display: flex;
   flex-direction: column;
 }
 }
 
-/* PYD Styles */
+header {
+  position: relative;
+}
+
+.aotg.primaryBkgrnd {
+  background-color: var(--primary-color);
+}
+.hatco.primaryBkgrnd {
+  background-image: url("/assets/img/HATCoBkgrnd.jpg");
+}
 .pyd.primaryBkgrnd {
   background-color: #f3f2ee;
+}
+
+.aotg.secondaryBkgrnd {
+  background-color: var(--tertiary-color);
+}
+.hatco.secondaryBkgrnd {
+  background-color: #006ac5;
 }
 .pyd.secondaryBkgrnd {
   background-color: #5bc4c3;
 }
-.pyd.h1,
-.pyd.h2,
-.pyd.h3 {
-  color: #013e8f;
 
+.aotg.h1 {
+  color: var(--secondary-color);
   text-align: center;
   font-size: 32px;
   padding: 2px;
 }
-
-/* HATCo Styles */
-.hatco.primaryBkgrnd {
-  background-image: url("/assets/img/HATCoBkgrnd.jpg");
-}
-.hatco.secondaryBkgrnd {
-  background-color: #29abe2;
-}
-.hatco.h1,
-.hatco.h2,
-.hatco.h3 {
+.hatco.h1 {
   color: #ffffff;
   text-align: center;
   font-size: 32px;
   padding: 2px;
 }
-
-/* AOTG Styles */
-.aotg.primaryBkgrnd {
-  background-color: var(--primary-color);
-}
-.aotg.secondaryBkgrnd {
-  background-color: var(--tertiary-color);
-}
-
-header {
-  position: relative;
-}
-
-h1 {
-  color: var(--secondary-color);
+.pyd.h1 {
+  color: #013e8f;
   text-align: center;
   font-size: 32px;
   padding: 2px;
 }
 
-h2,
-h3,
-h4 {
+.aotg.h2 {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 20px;
+  padding: 2px;
+}
+.hatco.h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding: 2px;
+}
+.pyd.h2 {
+  color: #013e8f;
+  text-align: center;
+  font-size: 20px;
+  padding: 2px;
+}
+
+.aotg.h3,
+.aotg.h4 {
   color: var(--secondary-color);
   text-align: center;
   padding: 2px;
 }
 
-
-p {
-  color: var(--secondary-color);
+.hatco.h3,
+.hatco.h4 {
+  color: #ffffff;
   text-align: center;
   padding: 2px;
 }
+
+.pyd.h3,
+.pyd.h4 {
+  color: #013e8f;
+  text-align: center;
+  padding: 2px;
+}
+
+.aotg.p {
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 2px;
+  font-size: 16px;
+}
+.hatco.p {
+  color: #ffffff;
+  text-align: center;
+  padding: 2px;
+  font-size: 16px;
+}
+.pyd.p {
+  color: #013e8f;
+  text-align: center;
+  padding: 2px;
+  font-size: 16px;
+}
+
 
 .flexContainer {
   display:grid;
@@ -134,6 +166,7 @@ p {
   margin-right: auto;
   max-width: 350px;
   height: auto;
+  padding: 10px;
 }
 
 .trees {
@@ -165,6 +198,8 @@ p {
   text-align: center;
   position: relative;
   display: block;
+  font-size: 18px;
+  padding: 10px;
 }
 
 /* Brand Table */
@@ -192,7 +227,7 @@ th {
   padding: 4px;
 }
 
-.itinerary {
+.aotg.itinerary {
   flex: 1 1 100%;
   order: 1;
   background-color: var(--text-primary-color);
@@ -203,9 +238,31 @@ th {
   color: var(--secondary-color);
   text-align: center;
 }
+.hatco.itinerary {
+  flex: 1 1 100%;
+  order: 1;
+  background-color: #ffffff;
+  border: 1px solid #006ac5;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 4px;
+  color: #006ac5;
+  text-align: center;
+}
+.pyd.itinerary {
+  flex: 1 1 100%;
+  order: 1;
+  background-color:#fac2c5;
+  border: 1px solid #013e8f;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 4px;
+  color: #013e8f;
+  text-align: center;
+}
 
-.homeport,
-.ship-facts {
+.aotg.homeport,
+.aotg.ship-facts {
   flex: 1 1 calc(50% - 8px);
   order: 2;
   background-color: var(--text-primary-color);
@@ -216,9 +273,33 @@ th {
   color: var(--secondary-color);
   text-align: center;
 }
+.hatco.homeport,
+.hatco.ship-facts {
+    flex: 1 1 calc(50% - 8px);
+    order: 2;
+    background-color: #ffffff;
+    border: 1px solid #006ac5;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 4px;
+    color: #006ac5;
+    text-align: center;
+}
+.pyd.homeport,
+.pyd.ship-facts {
+  flex: 1 1 calc(50% - 8px);
+  order: 2;
+  background-color: #fac2c5;
+  border: 1px solid #013e8f;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 4px;
+  color: #013e8f;
+  text-align: center;
+}
 
-.weather,
-.excursions {
+.aotg.weather,
+.aotg.excursions {
   flex: 1 1 calc(50% - 8px);
   order: 3;
   background-color: var(--text-primary-color);
@@ -229,9 +310,33 @@ th {
   color: var(--secondary-color);
   text-align: center;
 }
+.hatco.weather,
+.hatco.excursions {
+    flex: 1 1 calc(50% - 8px);
+    order: 3;
+    background-color: #ffffff;
+    border: 1px solid #006ac5;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 4px;
+    color: #006ac5;
+    text-align: center;
+}
+.pyd.weather,
+.pyd.excursions {
+  flex: 1 1 calc(50% - 8px);
+  order: 3;
+  background-color: #fac2c5;
+  border: 1px solid #013e8f;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 4px;
+  color: #013e8f;
+  text-align: center;
+}
 
-.fun,
-.packing {
+.aotg.fun,
+.aotg.packing {
   flex: 1 1 calc(50% - 8px);
   order: 4;
   background-color: var(--text-primary-color);
@@ -242,34 +347,126 @@ th {
   color: var(--secondary-color);
   text-align: center;
 }
+.hatco.fun,
+.hatco.packing {
+    flex: 1 1 calc(50% - 8px);
+    order: 4;
+    background-color: #ffffff;
+    border: 1px solid #006ac5;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 4px;
+    color: #006ac5;
+    text-align: center;
+}
+.pyd.fun,
+.pyd.packing {
+  flex: 1 1 calc(50% - 8px);
+  order: 4;
+  background-color: #fac2c5;
+  border: 1px solid #013e8f;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 4px;
+  color: #013e8f;
+  text-align: center;
+}
 
 /* Scavenger View */
-.preCruise {
+.scavenger {
+  text-align: center;
+}
+
+.aotg.preCruise {
   background-color: var(--text-primary-color);
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
   text-align:center;
 }
-
-.embarkation {
-  background-color: var(--text-primary-color);
+.hatco.preCruise {
+  background-color: #29abe2;
+  border: 1px solid #006ac5;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align:center;
+}
+.pyd.preCruise {
+  background-color: #fac2c5;
+  border: 1px solid #013e8f;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
   text-align:center;
 }
 
-.sailing {
+.aotg.embarkation {
   background-color: var(--text-primary-color);
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
   text-align:center;
 }
+.hatco.embarkation {
+  background-color: #29abe2;
+  border: 1px solid #006ac5;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align:center;
+}
+.pyd.embarkation {
+  background-color: #fac2c5;
+  border: 1px solid #013e8f;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align:center;
+}
 
-.ports {
+.aotg.aotg.sailing {
   background-color: var(--text-primary-color);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align:center;
+}
+.hatco.sailing {
+  background-color: #29abe2;
+  border: 1px solid #006ac5;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align:center;
+}
+.pyd.sailing {
+  background-color: #fac2c5;
+  border: 1px solid #013e8f;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align:center;
+}
+
+.aotg.ports {
+  background-color: var(--text-primary-color);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align:center;
+}
+.hatco.ports {
+  background-color: #29abe2;
+  border: 1px solid #006ac5;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align:center;
+}
+.pyd.ports {
+  background-color: #fac2c5;
+  border: 1px solid #013e8f;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
@@ -277,14 +474,55 @@ th {
 }
 
 /* Barcrawl View */
-#barCrawl {
+.aotg.barCrawl {
   background-color: var(--text-primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align:center;
+}
+.hatco.barCrawl {
+  background-color: #29abe2;
+  border: 1px solid #006ac5;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align:center;
+}
+.pyd.barCrawl {
+  background-color: #fac2c5;
+  border: 1px solid #013e8f;;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
   text-align:center;
 }
 
+.aotg.pubs {
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align:center;
+}
+.hatco.pubs {
+  background-color: #29abe2;
+  border: 1px solid #006ac5;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align:center;
+}
+.pyd.pubs {
+  background-color: #fac2c5;
+  border: 1px solid #013e8f;;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align:center;
+}
 
 /*Form*/
 .form {
@@ -341,4 +579,5 @@ footer {
   text-align: center;
   font-family:"Playfair Display";
   color: var(--secondary-color);
+  padding: 100px;
 }

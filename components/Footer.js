@@ -7,16 +7,17 @@ export default state => {
     : store.Global.selectedBrand;
   return html`
     <footer class="${brand} secondaryBkgrnd">
+      <strong
+        ><a href="/Home" data-navigo>Home</a> |
+        <a href="/About" data-navigo>About</a> |
+        <a href="/Contact" data-navigo>Contact</a> |
+        <a href="/Advisors" data-navigo> Travel Advisors</a></strong
+      >
       <br />
-      <br />
-      <a href="/Home" data-navigo>Home</a> |
-      <a href="/About" data-navigo>About</a> |
-      <a href="/Contact" data-navigo>Contact</a> |
-      <a href="/Advisors" data-navigo> Travel Advisors</a>
-      <br />
-      <br />
-      &copy; Adventures on the Go<br />
-      Powered by The Travel Adventure Team LLC 2023 & 2024
+      <strong
+        >&copy; Adventures on the Go<br />
+        Powered by The Travel Adventure Team LLC 2023 & 2024</strong
+      >
     </footer>
   `;
 };
