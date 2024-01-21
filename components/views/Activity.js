@@ -51,9 +51,10 @@ export default state => html`
                     .map(
                       day => `
                   <div>
-                    Date/Time: ${day.dateTime}
+                    Date: ${day.dateTime}
                     Low: ${day.minTemp} °F
                     High: ${day.maxTemp} °F
+                    ${day.description}
                   </div>`
                     )
                     .join("")

@@ -17,11 +17,12 @@ export default () => html`
           Selfie/Photo Scavenger Hunt
         </div>
         <div class="${store.Global.selectedBrand} preCruise">
-          <div class="${store.Global.selectedBrand} h3">Pre-Cruise</div>
-          <div class="${store.Global.selectedBrand} h4">
+          <div class="${store.Global.selectedBrand} h2">Pre-Cruise</div>
+          <div class="${store.Global.selectedBrand} h3">
             Keep that camera handy, and immortalize those moments, making the
             trip even more grand before it officially beings
           </div>
+          <br />
           <div class="${store.Global.selectedBrand} p" id="box1">
             <input type="checkbox" class="box" />Luggage posed, your tickets
             close, snap that selfie before it goes!
@@ -52,7 +53,8 @@ export default () => html`
           </div>
         </div>
         <div class="${store.Global.selectedBrand} embarkation">
-          <div class="${store.Global.selectedBrand} h3">Embarkation Day</div>
+          <div class="${store.Global.selectedBrand} h2">Embarkation Day</div>
+          <br />
           <div class="${store.Global.selectedBrand} p" id="box8">
             <input type="checkbox" class="box" />Ship in sight, a majestic view,
             take the pic, it's all brand new.
@@ -99,11 +101,13 @@ export default () => html`
           </div>
         </div>
         <div class="${store.Global.selectedBrand} sailing">
-          <div class="${store.Global.selectedBrand} h3">While Sailing</div>
-          <div class="${store.Global.selectedBrand} h4">
+          <div class="${store.Global.selectedBrand} h2">While Sailing</div>
+          <div class="${store.Global.selectedBrand} h3">
             Each moment's a trinket, a gem of the sea, tuck them in your camera,
             keepsakes to be.
           </div>
+          <br />
+
           <div class="${store.Global.selectedBrand} p" id="box19">
             <input type="checkbox" class="box" />Brunch on days of high
             tides,savor the moments where true bliss abides.
@@ -202,11 +206,12 @@ export default () => html`
           </div>
         </div>
         <div class="${store.Global.selectedBrand} ports">
-          <div class="${store.Global.selectedBrand} h3">Port Stops</div>
-          <div class="${store.Global.selectedBrand} h4">
+          <div class="${store.Global.selectedBrand} h2">Port Stops</div>
+          <div class="${store.Global.selectedBrand} h3">
             Port adventures a world anew, return with pictures for your at home
             crew!
           </div>
+          <br />
           <div class="${store.Global.selectedBrand} p" id="box43">
             <input type="checkbox" class="box" />With Nassau’s landmark,
             standing proud, snap that sign amidst the crowd.

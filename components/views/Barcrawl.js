@@ -5,10 +5,10 @@ export default () => html`
   <main>
     <div class="flexContainer">
       <div class="${store.Global.selectedBrand} secondaryBkgrnd">
+        <div class="${store.Global.selectedBrand} h1">
+          Carnvial Sunshine Bar/Pub Crawl
+        </div>
         <div class="${store.Global.selectedBrand} barCrawl">
-          <div class="${store.Global.selectedBrand} h1">
-            Carnvial Sunshine Bar/Pub Crawl
-          </div>
           <div class="${store.Global.selectedBrand} p">
             Ahoy, Thirsty Explorers and Libation Lovers!
           </div>
@@ -58,6 +58,7 @@ export default () => html`
           <div class="${store.Global.selectedBrand} h2">
             Find the Bars/ Pubs On Board Your Ship
           </div>
+          <br />
           <div class="${store.Global.selectedBrand} p" id="box1">
             <input type="checkbox" class="box" />At the ship's proud prow, where
             whispers wind, serenity found and peace of mind. To start your quest

@@ -100,11 +100,17 @@ router.hooks({
           .then(response => {
             store.Activity.weather = {
               forecast: response.data.list.map(day => ({
-                dateTime: day.dt,
+                dateTime: new Date(day.dt * 1000).toLocaleString("en-US", {
+                  weekday: "long",
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                  timezone: "UTC"
+                }),
                 minTemp: day.temp.min,
                 maxTemp: day.temp.max,
-                description: day.weather,
-                icon: day.weather.icon
+                description: day.weather[0].description,
+                icon: day.weather[0].icon
               }))
             };
             done();

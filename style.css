@@ -379,6 +379,7 @@ th {
 
 .aotg.preCruise {
   background-color: var(--text-primary-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
@@ -403,6 +404,7 @@ th {
 
 .aotg.embarkation {
   background-color: var(--text-primary-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
@@ -427,6 +429,7 @@ th {
 
 .aotg.aotg.sailing {
   background-color: var(--text-primary-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
@@ -451,6 +454,7 @@ th {
 
 .aotg.ports {
   background-color: var(--text-primary-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
