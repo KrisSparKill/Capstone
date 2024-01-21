@@ -3,7 +3,7 @@ import * as store from "../../store";
 
 export default state => html`
   <div class="flexContainer">
-    <div class="${store.Global.selectedBrand} secondaryBkgrnd">
+    <div class="aotg secondaryBkgrnd">
       <table id="brands">
         <tr>
           <th>Contact</th>
