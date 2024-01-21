@@ -95,7 +95,7 @@ router.hooks({
       case "Activity":
         axios
           .get(
-            `https://api.openweathermap.org/data/2.5/forecast/daily?lat=25.04&lon=-77.39&cnt=5&units=imperial&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
+            `https://api.openweathermap.org/data/2.5/forecast/daily?q=Nassau,BS&cnt=5&units=imperial&appid=${process.env.OPEN_WEATHER_MAP_API_KEY}`
           )
           .then(response => {
             store.Activity.weather = {
@@ -109,7 +109,7 @@ router.hooks({
                 }),
                 minTemp: day.temp.min,
                 maxTemp: day.temp.max,
-                description: day.weather[0].description,
+                description: day.weather[0].main,
                 icon: day.weather[0].icon
               }))
             };
