@@ -4,8 +4,7 @@ import * as store from "../../store";
 export default () => html`
   <div class="flexContainer">
     <div class="${store.Global.selectedBrand} secondaryBkgrnd">
-      <div class="${store.Global.selectedBrand} h2">
-        <h2>Please select your Sailing Below</h2>
+      <div class="${store.Global.selectedBrand} h2">Please select your Sailing Below</h2>
         <div class="dropdown">
           <select id="activityDropdown">
             <option value="">Select Sailing</option>
