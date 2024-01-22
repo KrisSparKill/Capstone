@@ -209,6 +209,10 @@ table {
   margin-top: 20px;
 }
 
+tr {
+  background-color: var(--text-primary-color);
+}
+
 th, td {
   border: 1px solid var(--secondary-color);
   padding: 8px;
